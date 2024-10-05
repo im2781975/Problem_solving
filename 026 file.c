@@ -567,4 +567,55 @@ int main()
     }
     return 0;
 }
-/***
+/***/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    int n, x, k, total, ans,t,i, rem;
+    scanf("%d", &t);
+    for(i=1; i<=t; i++)
+    {
+    scanf("%d %d %d", &n, &x,&k);
+    //swap(x, k);
+    total=n*(n+1)/2;
+    rem= (x*(2*k+(x-1)*1))/2;
+    //cout<<rem<<endl;
+    ans= total-rem;
+    printf("Case %d: %d\n",i, ans);
+    }
+
+    return 0;
+
+}
+/***/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char s[1000];
+    int i, r, l, sum;
+    while(gets(s))
+    {
+
+        r=0;
+        l=strlen(s);
+        if(l==1 && s[0]=='0')
+            break;
+        for(i=0; i<l; i++)
+        {
+            sum=r*10+(s[i]- '0');
+            r=sum%11;
+
+        }
+        if(r==0)
+            printf("Y\n");
+        else
+            printf("N\n");
+
+    }
+    return 0;
+
+}
+/***/
