@@ -643,3 +643,84 @@ printf("%d %c %d = %d\n",num1,sign, num2, value );
 return 0;
 }
 /***/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char text[100];
+    int i,len,vowel,consonant;
+    printf("Enter the string:");
+    gets(text);
+
+    vowel=0;
+    consonant=0;
+    len=strlen(text);
+
+    for(i=0;i<len;i++)
+    {
+
+    if(text[i]=='a' || text[i]=='e' || text[i]=='i' ||text[i]=='o' || text[i]=='u' || text[i]=='A' || text[i]=='E'  || text[i]=='I'  || text[i]=='O'||text[i]=='U')
+        {
+            vowel++;
+        }
+    else if(text[i]>='a'&& text[i]>='z'||text[i]>='A'&& text[i]>='Z')
+        {
+            consonant++;
+
+        }
+}
+    printf("total number of vowel = %d\n",vowel);
+    printf("total number of consonant= %d",consonant);
+    return 0;
+    }
+/***/
+#include<stdio.h>
+
+int main()
+{
+
+int n ,c ,p;
+
+scanf("%d",&n);
+
+while(n--)
+{
+    scanf("%d %d",&c,&p);
+
+    printf("%d %d\n",c,p);
+
+    if(c==1)
+     printf("%d\n",p);
+     else if(c>1)
+     printf("%d\n",(c*p)-(c-1)*2);
+
+}
+
+return 0;
+}
+/***/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int a[100],i,j,t, n;
+     scanf("%d", &t);
+     for(j=0; j<t; j++)
+     {
+     scanf("%d", &n);
+     for(i=0; i<3; i++)
+     {
+          scanf("%d", &a[i]);
+
+     }
+          sort(a,a+3);
+
+
+     for(i=0; i<3; i++){
+          printf("Data set #%d:\n Orginal order:\n smallest to largest: a[i]\n");
+     }
+
+}
+ return 0;
+}
+/***/
