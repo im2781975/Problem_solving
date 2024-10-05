@@ -1,3 +1,167 @@
+/***/
+#include<stdio.h>
+int main()
+{
+
+    int i, j, n, a[100], temp;
+    scanf("%d", &n);
+    for(i=1; i<=n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    for(i=1; i<=n; i++){
+        for(j=i+1; j<=n; j++){
+            if(a[i]>a[j]){
+                temp= a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+        }
+    }
+   // printf("the order is:");
+    //for(i=1; i<=n; i++)
+    //{
+      //  printf("%d ", a[i]);
+    //}
+      printf("\n");
+     printf("Odd Number : ");
+    for(i=1; i<=n; i++){
+        if(a[i]%2!=0)
+            printf("%d ", a[i]);
+            }
+            printf("\n");
+            printf("Even Number : ");
+              for(i=1; i<=n; i++){
+                if(a[i]%2==0)
+                    printf("%d ", a[i]);
+              }
+
+}
+/***/
+#include<stdio.h>
+#include<math.h>
+#define Max 10
+int main()
+{
+    float x[Max], avrg, var, sd, sum=0, sum1=0;
+    int i, n;
+    printf ("Enter the value of N\n");
+    scanf("%d", &n);
+    printf("Enter %d real number\n",n);
+    for(i=0; i<n; i++){
+        scanf("%f", &x[i]);
+        }
+     for(i=0; i<n; i++){
+         sum=sum+x[i];
+         }
+         avrg=sum/n;
+         for(i=0; i<n; i++){
+             sum1= sum1+ pow(x[i]-avrg, 2);
+             }
+             var=sum1/n;
+             sd=sqrt(var);
+             printf("standard deviation= %0.2f\n", sd);
+             return 0;
+             }
+/***/
+#include <stdio.h>
+ int main()
+ {
+     char ara[100];
+     while(NULL != gets(ara)) {
+         printf("%s\n", ara);
+     }
+     return 0;
+ }
+/***/
+#include <stdio.h>
+int main()
+{
+char country[] = "Bangladesh\0";
+int i, length;
+printf("%s\n", country);
+length = 10;
+for(i = 0; i < length; i++) {
+if(country[i] >= 97 && country[i] <= 122) {
+country[i] = 'A' + (country[i] - 'a');
+}
+}
+printf("%s\n", country);
+return 0;
+}
+/***/
+#include<stdio.h>
+int main()
+{
+    char country[] = {'B', 'A', 'N', 'G', 'L', 'A', 'D', 'E', 'S', 'H', ' ', 'I', 'S', ' ', 'M', 'Y', ' ', 'C', 'O', 'U', 'N', 'T', 'R', 'Y'};
+        printf("%s\n", country);
+        return 0;
+}
+/***/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char line[80];
+    scanf("%[^\n]", line);
+    printf("%s", line);
+    return 0;
+    }
+/***/
+#include<stdio.h>
+int main()
+{
+    char country[] = {'B', 'a', 'n', 'g', 'l', 'a', 'd', 'e', 's', 'h'};
+    int i, length;
+        printf("%s\n", country);
+        length=10;
+        for(i=0; i<length; i++) {
+            if(country[i]>=97 && country[i]<=122) {
+                country[i]= 'A'+ (country[i]- 'a');
+                }
+        }
+        printf("%s\n", country);
+        return 0;
+}
+/***/
+#include<stdio.h>
+int main()
+{
+    char country[] = {'B', 'A', 'N', 'G', 'L', 'A', 'D', 'E', 'S', 'H'};
+    int i, length;
+        printf("%s\n", country);
+        length=10;
+        for(i=0; i<length; i++) {
+            if(country[i]>=65 && country[i]<=90) {
+                country[i]= 'a'+ (country[i]- 'A');
+                }
+        }
+        printf("%s\n", country);
+        return 0;
+}
+/***/
+#include<stdio.h>
+int string_length(char str[])
+{
+    int i, length=0;
+
+    for(i=0; str[i]!= '\0'; i++){
+        length++;
+        }
+        return length;
+        }
+
+int main()
+{
+    char country[100];
+    int length;
+    scanf("%s", country);
+        length = string_length(country);
+        printf("length: %d\n", length);
+        return 0;
+}
+
+/***/
 #include<stdio.h>
 
 int main()
