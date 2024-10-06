@@ -459,3 +459,85 @@ int main()
        return 0;
        }
 /***/
+#include<stdio.h>
+int main()
+{
+    int x='A';
+    start:
+        printf("%c=%d\n", x,x);
+        x++;
+        goto start;
+            return 0;
+    }
+/***/
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+int t;
+char str[100];
+scanf("%d", &t);
+getchar();
+while(t--)
+{
+    gets(str);
+    printf("%s\n", str);
+    return 0;
+    }
+    }
+/***/
+void sort(int n, int x[ ]);
+   main()
+   {
+       int i;
+       int marks[5] = {40, 90, 73, 81, 35};
+
+       printf("Marks before sorting\n");
+       for(i = 0; i < 5; i++)
+          printf("%d ", marks[i]);
+       printf("\n\n");
+
+       sort (5, marks);
+       printf("Marks after sorting\n");
+       for(i = 0; i < 5; i++)
+          printf("%4d", marks[i]);
+       printf("\n");
+   }
+   void sort(int n, int x[ ])
+   {
+       int i, j, t;
+
+       for(i = 0; i < n; i++)
+          for(j = i+1; j <= n; j++)
+             if(x[i] >= x[j])
+             {
+                t = x[i];
+                x[i] = x[j];
+                x[j] = t;
+             }
+   }
+/***/
+#include<stdio.h>
+
+int findFactorial(int);
+int main(){
+  int i,factorial,num;
+
+  printf("Enter a number: ");
+  scanf("%d",&num);
+
+  factorial = findFactorial(num);
+  printf("Factorial of %d is: %d",num,factorial);
+
+  return 0;
+}
+
+int findFactorial(int num){
+    int i,f=1;
+
+    for(i=1;i<=num;i++)
+      f=f*i;
+
+     return f;
+}
+/***/
