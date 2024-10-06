@@ -340,3 +340,122 @@ int main()
        return 0;
         }
 /***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Enter the value of N:");
+    scanf("%d",&N);
+
+    for(i=N; i>=1; i--)
+        {
+        for(j=N; j>i; j--)
+        {
+            printf(" ");
+            }
+        for (j=1; j<=i; j++)
+        {
+            printf("%d",i);
+            }
+             printf("\n");
+             }
+        return 0;
+    }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Enter the value of N:");
+    scanf("%d",&N);
+
+    for(i=N; i>=1; i--)
+        {
+        for (j=1; j<=i; j++)
+        {
+            printf("%d",i);
+            }
+             printf("\n");
+             }
+        return 0;
+    }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=1; j<i; j++)
+        {
+            printf(" ");
+        }
+        for(j=i; j<=N; j++)
+        {
+            printf("%d", i);
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=i; j<=N; j++)
+        {
+            printf("%d", i);
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=1; j<=N-i; j++)
+        {
+            printf(" ");
+        }
+        for(j=1; j<=i; j++)
+        {
+            printf("%d", (N-i+1));
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i,j, N;
+    printf("Enter the value of N:");
+    scanf("%d",&N);
+    for(i=N; i>=1; i--)
+       {
+       for (j=i;j>=1; j--){
+       printf("%d", j);
+       }
+       printf("\n");
+
+       }
+       return 0;
+       }
+/***/
