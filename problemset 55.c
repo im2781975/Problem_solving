@@ -141,3 +141,108 @@ int main()
     return 0;
     }
 /***/
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+    int n, c;
+    printf("Enter a number\n");
+    scanf("%d",&n);
+
+    for(c=2; c<=n-1; c++)
+    {
+        if(n%c==0)
+        {
+        printf("%d is not prime\n",n);
+        break;
+        }
+            }
+            if(c==n)
+                printf("%d is prime\n",n);
+                return 0;
+                   }
+/***/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int a[100],i,j,t, n;
+     scanf("%d", &t);
+     for(j=0; j<t; j++)
+     {
+     scanf("%d", &n);
+     for(i=0; i<3; i++)
+     {
+          scanf("%d", &a[i]);
+
+     }
+          sort(a,a+3);
+
+
+     for(i=0; i<3; i++){
+          printf("Data set #%d:\n Orginal order:\n smallest to largest: a[i]\n");
+     }
+
+}
+ return 0;
+}
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("%d", (N-i+1));
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=1; j<=N-i; j++)
+        {
+            printf(" ");
+        }
+        for(j=1; j<=i; j++)
+        {
+            printf("%d", j);
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
+#include<stdio.h>
+int main()
+{
+    int i, j, N;
+    printf("Ener the value of N:");
+    scanf("%d", &N);
+    for (i=1; i<=N; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("%d", j);
+
+        }
+        printf("\n");
+        }
+        return 0;
+        }
+/***/
